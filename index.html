@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chromantico</title>
+</head>
+<body>
+    <div class="hero-bg">
+        <header class="container-fluid py-3 px-4">
+            <nav class="navbar navbar-expand-lg mb-0 mb-lg-5">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/logo/chromantico_logo.png" alt="logo" height="36" />
+                </a>
+                <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>            
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navigation me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Introduction">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Tutorial">Tutorial</a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn">
+                        <button type="button" class="get-start btn btn-outline-primary px-4 rounded-pill">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="row gy-5">
+                <div class="col-lg-6 text-white">
+                    <h1 class="hero header mt-5">Need to color convert your color palette?</h1>
+                    <p class="hero-subheader mt-3">This is the best place, just start and get going</p>
+                    <div class="hero-cto mt-5">
+                        <button class="btn get-start btn-primary px-4 py-2 rounded-pill">Convert colors</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section id="About" class="task-section mt-0 mt-md-5 px-4">
+        <div class="row align-items-lg-center task-content gx-2 gy-5 justify-content-between flex-column-reverse flex-lg-row">
+            <div class="converter">
+                <h2>Hex to RGB</h2>
+                <label for="hexInput">Hex code: </label>
+                <input type="text" id="hexInput" placeholder="#RRGGBB or #RGB">
+                <button onclick="convertHexToRgb()">Convert to RGB</button>
+                <div id="hexToRgbResult" class="result"></div>
+            </div>
+            <div class="converter">
+                <h2>RGB to Hex</h2>
+                <label for="rInput">R (0-255): </label>
+                <input type="number" id="rInput" min="0" max="255">
+                <label for="gInput">G (0-255): </label>
+                <input type="number" id="gInput" min="0" max="255">
+                <label for="bInput">B (0-255): </label>
+                <input type="number" id="bInput" min="0" max="255">
+                <button onclick="convertRgbToHex()">Convert to Hex</button>
+                <div id="rgbToHexResult" class="result"></div>
+            </div>
+        </div>
+        <img class="round-shape" src="assets/img-round.svg" alt="round shape">
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aa08d20a7f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
