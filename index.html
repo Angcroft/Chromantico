@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <title>Chromantico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A HEX to RGB and viceversa converter website" />
+    <meta name="keywords" content="hex, rgb, converter, color, design, creative" />
+    <meta name="author" content="Sergio Venegas" />
+
     <!-- Bootstrap CSS -->
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -11,7 +16,7 @@
         crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Chromantico</title>
+
 </head>
 <body>
     <div class="hero-bg">
@@ -54,10 +59,16 @@
             </div>
         </header>
     </div>
+
+    <section>
+        <h2>Introduction</h2>
+        <
+    </section>
+
     <section id="About" class="task-section mt-0 mt-md-5 px-4">
         <div class="row align-items-lg-center task-content gx-2 gy-5 justify-content-between flex-column-reverse flex-lg-row">
             <div class="converter">
-                <h2>Hex to RGB</h2>
+                <h2 class="fs-1 text-center m-auto section-heading">Hex to RGB</h2>
                 <label for="hexInput">Hex code: </label>
                 <input type="text" id="hexInput" placeholder="#RRGGBB or #RGB">
                 <button onclick="convertHexToRgb()">Convert to RGB</button>
@@ -71,7 +82,7 @@
                 <input type="number" id="gInput" min="0" max="255">
                 <label for="bInput">B (0-255): </label>
                 <input type="number" id="bInput" min="0" max="255">
-                <button onclick="convertRgbToHex()">Convert to Hex</button>
+                <button type="button" class="btn btn-primary" onclick="convertRgbToHex()">Convert to Hex</button>
                 <div id="rgbToHexResult" class="result"></div>
             </div>
         </div>
